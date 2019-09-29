@@ -60,6 +60,7 @@ h2 {
     font-weight: 600;
     margin: 0 48px;
     text-align: center;
+    font-size: 18px;
 }
 
 .top-nav a:hover {
@@ -78,9 +79,11 @@ h2 {
     font-weight: 600;
     font-size: 22px;
 }
+
 .call-number a:hover {
-    color : rgb(187, 190, 190);
+    color: rgb(187, 190, 190);
 }
+
 .main-content {
     text-align: center;
     padding-top: 280px;
@@ -144,11 +147,13 @@ section h1 span {
 .content-about strong {
     font-size: 22px;
 }
-.content-about a{
+
+.content-about a {
     text-decoration: none;
     color: #292929;
 }
-.content-about a:hover{
+
+.content-about a:hover {
     text-decoration: none;
     color: #413a3a;
 }
@@ -197,9 +202,6 @@ section h1 span {
     color: #484747;
 }
 
-.col-4 {
-    padding: 0;
-}
 
 #cards {
     border: 0;
@@ -228,7 +230,7 @@ section h1 span {
 #text {
     color: #484747;
     font-weight: 500;
-    padding-top: 40px;
+    padding-top: 80px;
 }
 
 #text a {
@@ -255,6 +257,39 @@ footer {
     margin: 0;
 }
 
+#gallery {
+    padding-top: 120px;
+}
+
+.content-line-gallery {
+    width: 62px;
+    height: 10px;
+    background: #FFCB45;
+    display: inline-block;
+    position: absolute;
+    bottom: -23px;
+    left: 0;
+}
+
+.content-gallery {
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+
+#gallery img {
+    height: 270px;
+    width: 355px;
+    margin: 10px 10px;
+}
+
+#gallery img:hover {
+    opacity: 0.9;
+}
+
+.top-gallery {
+    margin-top: 30px;
+}
+
 @media (max-width : 1024px) {
     .menu {
         display: none;
@@ -267,6 +302,14 @@ footer {
     .main-content {
         padding-top: 35%;
     }
+
+    #gallery img {
+        height: 220px;
+        width: 300px;
+    }
+   .col-sm-6 {
+       padding-left: 25px;
+   }
 }
 
 @media (max-width : 500px) {
@@ -301,15 +344,20 @@ footer {
     .content-tarrifs h1 {
         font-size: 36px;
     }
+    .col-sm-6 {
+        padding-left:45px;
+    }
 }
 
-@media (max-width : 400px){
+@media (max-width : 400px) {
     .logo {
         padding: 5% 14.5%;
     }
+
     .call-number {
         padding: 5% 18%;
     }
+
     .main-text p {
         font-size: 20px;
     }
@@ -321,7 +369,17 @@ footer {
     .main-text h1 {
         font-size: 38px;
     }
+
     .main-btn {
         padding-top: 7%;
+    }
+
+    .col-sm-6 {
+        padding-left:27px;
+    }
+}
+@media (max-width : 320px){
+    .col-sm-6 {
+        padding-left:2px;
     }
 }

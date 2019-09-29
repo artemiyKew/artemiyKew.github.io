@@ -12,8 +12,10 @@
     <link rel="shortcut icon" href="img/tow-truck.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="dist/lightbox2-2.11.1/dist/css/lightbox.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
             m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
@@ -31,6 +33,7 @@
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/55349692" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
+    <script src="dist/lightbox2-2.11.1/dist/js/lightbox.js"></script>
 </head>
 
 <body>
@@ -49,6 +52,7 @@
                                     <a href="#" onclick="slowScroll('#')">Главная</a>
                                     <a href="#about" onclick="slowScroll('#about')">О нас</a>
                                     <a href="#tarrifs" onclick="slowScroll('#tarrifs')">Тарифы</a>
+                                    <a href="#gallery" onclick="slowScroll('#gallery')">Галерея</a>
                                 </div>
                             </div>
 
@@ -132,14 +136,14 @@
     <section id="cards">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 ">
+                <div class="col-md-4 col-md-offset-4">
                     <img src="img/image 3.png" alt="картинка">
                     <p class="text-card">Эвакуатор
                         <br>
                         по Заволжскому району</p>
                     <p class="text-price">1500₽</p>
                 </div>
-                <div class="col-md-4 ">
+                <!-- <div class="col-md-4 ">
                     <img src="img/image 3.png" alt="картинка">
                     <p class="text-card">Эвакуатор <br>
                         по Ленинскому району</p>
@@ -150,7 +154,7 @@
                     <p class="text-card">Эвакуатор <br>
                         по Засвияжскому району</p>
                     <p class="text-price">2500₽</p>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -158,12 +162,53 @@
                 75-60-70</a></p>
     </section>
 
+    <section id="gallery">
+
+        <div class="container">
+            <div class="row">
+                <div class="content-gallery">
+                    <h1>
+                        <span>
+                            Галерея
+                            <div class="content-line-gallery">
+                            </div>
+                        </span></h1>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="img/piJI04YiMLI.jpg" data-lightbox="roadtrip"> <img
+                            src="../artemiyKew.github.io/img/piJI04YiMLI.jpg" alt="картинка" class="gallery_photo"></a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="img/FcrgRKDtT6c.jpg" data-lightbox="roadtrip"> <img
+                            src="../artemiyKew.github.io/img/FcrgRKDtT6c.jpg" alt="картинка" class="gallery_photo"></a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="img/gumdYeNq0LA.jpg" data-lightbox="roadtrip"> <img
+                            src="../artemiyKew.github.io/img/gumdYeNq0LA.jpg" alt="картинка" class="gallery_photo"></a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="img/i52Vta3oYj8.jpg" data-lightbox="roadtrip"> <img
+                            src="../artemiyKew.github.io/img/i52Vta3oYj8.jpg" alt="картинка" class="gallery_photo"></a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="img/LGfjd8KzU2g.jpg" data-lightbox="roadtrip"> <img
+                            src="../artemiyKew.github.io/img/LGfjd8KzU2g.jpg" alt="картинка" class="gallery_photo"></a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="img/qbpl5LVWYvA.jpg" data-lightbox="roadtrip"><img
+                            src="../artemiyKew.github.io/img/qbpl5LVWYvA.jpg" alt="картинка" class="gallery_photo"></a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
     <footer>
         <div class="footer-text">
             <p>© 2019 Evacuator73 Ulyanovsk</p>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script>
         $(document).ready(function () {
